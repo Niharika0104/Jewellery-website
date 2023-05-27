@@ -1,0 +1,375 @@
+{% extends 'base.html' %} {% load static %} {% block title%}SERVICES{% endblock %} {% block body %}
+<style>
+    .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 25px;
+    }
+    
+    .service-1 {
+        width: 300px;
+        height: 0px;
+        position: relative;
+    }
+    
+    .service-2 {
+        float: right;
+    }
+</style>
+<div class="container my-4 main">
+
+    <div name="ear1" class="ear">
+        <img src="/static/ear1.jpg" alt="">
+        <div class="service-1">
+            <span>$20</span>
+            <div class="service-2">
+
+                <i class="far fa-heart" id="heart" onclick="changeColor(this) " style="color: black"></i>
+
+                <span><button id="cart">add</button></span>
+            </div>
+        </div>
+    </div>
+
+    <div name="ear2" class="ear"><img src=" /static/ear2.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this)" name="heart" style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div name="ear3" class="ear">
+        <img src="/static/ear3.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+
+                <i class="far fa-heart " onclick="changeColor(this)" name="heart " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div name="ear4" class="ear">
+        <img src="/static/ear4.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this)" style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+
+    <div name="ear5" class="ear">
+        <img src="/static/ear5.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this)" style=" color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div name="neck1 " class="neck ">
+        <img src=" /static/neck1.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div class="neck ">
+        <img src="/static/neck2.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div class="neck ">
+        <img src="/static/neck3.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div class="neck ">
+        <img src="/static/neck4.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/neck5.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class=" far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/neck6.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/neck7.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img src="/static/neck8.jpg " height=300px width=300px alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/neck9.png " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/neck10.png " height=300px width=300px alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/neck11.jpg " height=300px width=300px alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/pend1.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/ring1.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/ring2.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/ring3.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/ring4.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/ring5.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/ring6.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="/static/ring7.jpg " alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="fa fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/static/ring8.jpg " height=300px width=300px alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="/static/ring8.jpg " height=300px width=300px alt=" ">
+        <div class="service-1 ">
+            <span>$20</span>
+            <div class="service-2 ">
+
+                <i class="far fa-heart " onclick="changeColor(this) " style="color: black "></i>
+
+                <span><button id="cart ">add</button></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+<script type="text/javascript ">
+    function changeColor(x) {
+        console.log(x.classList);
+        var c = x.classList;
+        d = c + " ";
+        d = "." + d;
+        console.log(d);
+
+        if (x.classList[0] == "far")
+            x.classList.replace("far", "fa");
+        else {
+            x.classList.replace("fa", "far");
+        }
+        console.log(x.classList);
+        var c = x.classList;
+        d = c + " ";
+        d = "." + d;
+        console.log(d);
+        const itag = document.getElementsByTagName("i");
+        console.log(itag);
+        console.log(itag.parentElement);
+
+
+
+    }
+</script>
+
+{% endblock %}
